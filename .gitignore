@@ -1,3 +1,5 @@
+virtualenv.py 
+env/
 *.py[cod]
 
 # C extensions
