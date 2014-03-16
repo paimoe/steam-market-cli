@@ -94,6 +94,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='steam market thingy')
     parser.add_argument('-s', '--search', required=True, help='Search terms to use (will add "Trading Card" to the end)')
     parser.add_argument('-n', '--name', help='Name of this set (kinda pointless)')
+    parser.add_argument('-m', '--monitor', action='store_true', help='Keep monitoring price until it gets below a certain price')
     opts = parser.parse_args()
 
     search(opts.search, opts.name)
